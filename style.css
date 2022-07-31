@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    font-size: calc(1vw + 1em);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    padding: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.programing {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.75) 15%, rgba(0, 0, 0, 0.199)), url(./images/doty-1659083171391-6712.jpg);
+    align-items: flex-end;
+}
+.english {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75) 15%, rgba(0, 0, 0, 0.199)), url(./images/bram-naus-n8Qb1ZAkK88-unsplash.jpg);
+    align-items: flex-start;
+}
+.dynamic {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.199)), url(./images/ross-stone-AlSBg6fvBAU-unsplash.jpg);
+}
+.links {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0.199)), url(./images/link.jpg);
+}
+h2,h3 {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo_list {
+    padding: 0.5em 1.5em;
+    backdrop-filter: blur(1px);
+}
+.todo_list__item {
+    display: inline-block;
+}
+.todo_list__item  a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-style: italic;
+    margin:0 0.5em ;
+}
+.todo_list__item a::before {
+    content:'' ;
+    position: absolute;
+    top: calc(100% + 0.1em);
+    left: 0;
+    right: 0;
+    height: 0.1em;
+    background-color: white;
+    border-radius: 2em;
+    transform: scale(0);
+    transition: 0.3s;
+
+}
+.todo_list__item a::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 0.1em);
+    left: 0;
+    right: 0;
+    height: 0.1em;
+    background-color: white;
+    border-radius: 2em;
+    transform: scale(0);
+    transition: 0.3s;
+
+}
+.todo_list__item a:hover::before {
+    transform: scale(0.75);
+}
+
