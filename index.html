@@ -1,113 +1,89 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
-        integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div id="fullpage">
-            <section class="section programing">
-                <div>
-                    <h2>“Programing”</h2>
-                    <ul class="todo_list">
-                        <li class="todo_list__item"><a href="">Data Structure & Algorihms</a></li>
-                        <li class="todo_list__item"><a href="">Java</a></li>
-                        <li class="todo_list__item"><a href="">Wordpress</a></li>
-                        <li class="todo_list__item"><a href="">JavaScript & Jquery</a></li>
-                        <li class="todo_list__item"><a href="">ReactJs</a></li>
-                        <li class="todo_list__item"><a href="">Seo</a></li>
-                        <li class="todo_list__item"><a href="">BootStrap</a></li>
-                        <li class="todo_list__item"><a href="">MVC</a></li>
-                        <li class="todo_list__item"><a href="">Scss</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="section english">
-                <div>
-                    <h2>“English”</h2>
-                    <ul class="todo_list">
-                        <li class="todo_list__item"><a href="">Grammar</a></li>
-                        <li class="todo_list__item"><a href="">Vocabulary</a></li>
-                        <li class="todo_list__item"><a href="">Listening</a></li>
-                        <li class="todo_list__item"><a href="">Speaking</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class="section dynamic">
-                <div>
-                    <h2>“Dynamic”</h2>
-                    </ul>
-                </div>
-            </section>
-            <section class="section links">
-                <div>
-                    <h2>“Links”</h2>
-                    <ul class="todo_list">
-                        <li class="todo_list__item"><a href="https://topdev.vn/viec-lam/java-developer-up-to-1500-bkav-2026898">Find job</a></li>
-                        <li class="todo_list__item"><a href="https://livebook.manning.com/discussion">livebook</a></li>
-                        <li class="todo_list__item"><a href="https://drafts.csswg.org/">W3C</a></li>
-                        <li class="todo_list__item"><a href="https://caniuse.com/">Caniuse</a></li>
-                        <li class="todo_list__item"><a href="https://getbootstrap.com/">Bootstrap</a></li>
-                        <li class="todo_list__item"><a href="https://3dtransforms.desandro.com/">3Dtransforms</a></li>
-                        <li class="todo_list__item"><a href="https://www.javatpoint.com/svg-tutorial">SVG</a></li>
-                        <li class="todo_list__item"><a href="https://www.w3.org/TR/SVG/conform.html#static-mode">SVG</a></li>
-                        <li class="todo_list__item"><a href="https://codepen.io/isladjan/pen/abdyPBw?editors=0010 ">Codepen</a></li>
-                        <li class="todo_list__item"><a href="https://www.quirksmode.org/">Quirksmode</a></li>
-                        <li class="todo_list__item"><a href="https://www.javascripttutorial.net/">Jvascripttutorial</a></li>
-                        <li class="todo_list__item"><a href="https://greensock.com/">Greensock</a></li>
-                        <li class="todo_list__item"><a href="https://threejs.org/">Threejs</a></li>
-                        <li class="todo_list__item"><a href="https://www.awwwards.com/">Awwwards</a></li>
-                        <li class="todo_list__item"><a href="">Flatiocon</a></li>
-                        <li class="todo_list__item"><a href="">Caniuse</a></li>
-                        <li class="todo_list__item"><a href="">Caniuse</a></li>
-                        <li class="todo_list__item"><a href="">Caniuse</a></li>
-                    </ul>
-                </div>
-            </section>
+    <header class="header">
+        <nav>
+            <ul class="navigation">
+                <li class="navigation__item"><button onclick="changeTab(this, 'home')"
+                        class="button active">Home</button></li>
+                <li class="navigation__item"><button onclick="changeTab(this, 'programing')"
+                        class="button">programing</button></li>
+                <li class="navigation__item"><button onclick="changeTab(this, 'english')"
+                        class="button">english</button></li>
+                <li class="navigation__item"><button onclick="changeTab(this, 'links')" class="button">Links</button>
+                </li>
+                <li class="navigation__item"><button onclick="changeTab(this, 'more')" class="button">More</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="hero_image">
+            <img src="images/mask.png" alt="">
+        </div>
+        <div class="tab">
+            <div id="home" class="tab_content flex_center">
+                <q>If you have a place to go, it is a home. If you have someone to love, it is a family. If you have
+                    both, it is a
+                    blessing.</q><br>
+                <q>Do the difficult things while they are easy and do the great things while they are small. A journey
+                    of a thousand miles begins with a single step</q><br>
+                <a class="start" href="https://developer.mozilla.org/en-US/" target="_blank">Start !!</a>
+            </div>
+            <div id="programing" class="tab_content">
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
+            <div id="english" class="tab_content">
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
+            <div id="links" class="tab_content">
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
+            <div id="more" class="tab_content">
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
         </div>
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
-        integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
     <script>
-        new fullpage('#fullpage', {
-            //options here
-            autoScrolling: true,
-            scrollHorizontally: true
-        });
+        function changeTab(ele, id) {
+            let tabs = document.getElementsByClassName('tab_content')
+            let tabButtons = document.querySelectorAll('.navigation__item .button');
+            let heroImage = document.querySelector('.hero_image');
+            for (let i = 0; i< tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active');
+            }
+            for (let i = 0 ; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+            ele.classList.add('active');
+            document.getElementById(id).style.display = 'block';
+            if (id == 'home') {
+                heroImage.style.backgroundImage = 'url("./images/Sheyaonwitter.png")'
+            }
+            else if (id == 'programing') {
+                heroImage.style.backgroundImage = 'url("./images/image2.jpg")'
+            }
+            else if (id == 'english') {
+                heroImage.style.backgroundImage = 'url("./images/image3.jpg")'
+            }
+            else if (id == 'links') {
+                heroImage.style.backgroundImage = 'url("./images/image4.jpg")'
+            }
+            else {
+                heroImage.style.backgroundImage = 'url("./images/image5.jpg")'
+            }
+        }
+        document.querySelector('.navigation__item .button').click();
     </script>
 </body>
 
